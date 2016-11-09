@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBAction func addNote(_ sender: UIButton) {
@@ -20,6 +19,7 @@ class ViewController: UIViewController {
                 textView.text = textField.text
             }
             textField.text = ""
+            textField.resignFirstResponder()
         }
     }
     override func viewDidLoad() {
@@ -31,7 +31,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
