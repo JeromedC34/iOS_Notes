@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let defaults:UserDefaults = UserDefaults.standard
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBAction func addNote(_ sender: UIButton) {
@@ -20,11 +21,13 @@ class ViewController: UIViewController {
             }
             textField.text = ""
             textField.resignFirstResponder()
+            defaults.set( textView.text , forKey: "myNote")
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textView.text = defaults.string(forKey:"myNote")
     }
 
     override func didReceiveMemoryWarning() {
