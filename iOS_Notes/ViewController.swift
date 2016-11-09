@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textView: UITextView!
+    @IBAction func addNote(_ sender: UIButton) {
+        if (textField.text != "") {
+            if (textView.text != "") {
+                textView.text = textView.text + "\n" + textField.text!
+            } else {
+                textView.text = textField.text
+            }
+            textField.text = ""
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

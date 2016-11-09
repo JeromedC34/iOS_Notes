@@ -40,11 +40,13 @@
                                     <constraint firstAttribute="width" constant="50" id="QaF-lu-uwx"/>
                                 </constraints>
                                 <state key="normal" title="Ajouter"/>
+                                <connections>
+                                    <action selector="addNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4F-JL-gaJ"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kbv-tE-P6P">
                                 <rect key="frame" x="16" y="86" width="343" height="571"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.94509803921568625" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -64,6 +66,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Kbv-tE-P6P" secondAttribute="trailing" id="vJh-Tk-LCh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="uBf-kZ-1Ns" id="7Xs-nh-kLr"/>
+                        <outlet property="textView" destination="Kbv-tE-P6P" id="JMM-SB-19d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
