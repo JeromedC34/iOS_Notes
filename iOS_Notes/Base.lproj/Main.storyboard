@@ -60,6 +60,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="4DV-oP-IGI"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="changeColor1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT3-Yc-oju"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyB-yt-8Yl">
                                         <rect key="frame" x="59" y="0.0" width="48.5" height="30"/>
@@ -67,20 +70,29 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="0hT-B7-2HD"/>
                                         </constraints>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7k-fK-N7M">
-                                        <rect key="frame" x="117.5" y="0.0" width="49" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Z2s-Ar-yDJ"/>
-                                        </constraints>
+                                        <connections>
+                                            <action selector="changeColor2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i4y-Ue-889"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9Q-Pd-q5c">
-                                        <rect key="frame" x="176.5" y="0.0" width="49" height="30"/>
+                                        <rect key="frame" x="117.5" y="0.0" width="49" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Hwy-vM-gIT"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="changeColor3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="diM-eN-7ns"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7k-fK-N7M">
+                                        <rect key="frame" x="176.5" y="0.0" width="49" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Z2s-Ar-yDJ"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="changeColor4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpC-Oh-zMj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipG-o1-ZOL">
                                         <rect key="frame" x="235.5" y="0.0" width="48.5" height="30"/>
@@ -88,6 +100,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="2DL-DQ-tEu"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="changeColor5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSJ-Vp-e2y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFh-sh-pOh">
                                         <rect key="frame" x="294" y="0.0" width="49" height="30"/>
@@ -95,6 +110,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="7Xb-hm-9Ys"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="changeColor6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pu-vn-ntq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
