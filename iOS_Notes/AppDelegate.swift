@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let arguments = ProcessInfo.processInfo.arguments
+        if arguments.contains("ResetNote") {
+            let defaults:UserDefaults = UserDefaults.standard
+            defaults.set("" , forKey: "myNote")
+        }
         return true
     }
 
