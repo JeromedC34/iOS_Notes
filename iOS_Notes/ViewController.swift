@@ -24,36 +24,21 @@ class ViewController: UIViewController {
             defaults.set( textView.text , forKey: "myNote")
         }
     }
-    func changeColor(_ sender: UIButton) {
+    @IBAction func changeColor(_ sender: UIButton) {
         textView.backgroundColor = sender.backgroundColor
-    }
-    @IBAction func changeColor1(_ sender: UIButton) {
-        changeColor(sender)
-    }
-    @IBAction func changeColor2(_ sender: UIButton) {
-        changeColor(sender)
-    }
-    @IBAction func changeColor3(_ sender: UIButton) {
-        changeColor(sender)
-    }
-    @IBAction func changeColor4(_ sender: UIButton) {
-        changeColor(sender)
-    }
-    @IBAction func changeColor5(_ sender: UIButton) {
-        changeColor(sender)
-    }
-    @IBAction func changeColor6(_ sender: UIButton) {
-        changeColor(sender)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         textView.text = defaults.string(forKey:"myNote")
+        //self.textField.delegate = self
     }
-    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        //addNote()
+        return true
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
-
